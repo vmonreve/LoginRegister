@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "rubik" sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  color: #e0e0e0;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  max-width: 1200px;
+  background-image: url("../asset/image1.png");
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login {
+  width: 650px;
+  display: flex;
+  align-items: center;
+}
+form {
+  width: 450px;
+  margin: 100px auto;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 27px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  margin-top: 75px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+}
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  text-transform: capitalize;
+}
+.verification-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.verification-input {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+ form button {
+  border: none;
+  padding: 14px;
+  width: 250px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left:100px ;
+  margin-top:20px ;
+  border-radius: 5px;
+  background-color: #000090;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: green;
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+.login p {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}

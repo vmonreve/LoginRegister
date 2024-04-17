@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --max-width: 1500px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+section {
+  background-color: #ffffff;
+}
+.header {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  /* margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../asset/image1.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.judul {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 5rem;
+}
+#judul {
+  margin-left: 5rem;
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.container {
+  width: 100%;
+  display: flex;
+  max-width: 850px;
+  background-color: #7d0a0a;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login {
+  width: 600px;
+  /* background-color: steelblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 270px;
+  margin: 60px;
+}
+
+.login-text {
+  color: #86211d;
+  margin: 10px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+hr {
+  border-top: 2px solid #86211d;
+}
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin-top: 12px;
+}
+input {
+  width: 100%;
+  margin: 2px;
+  border: 1px solid #000;
+  background: #e0e0e0;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+.forget {
+  float: right;
+  margin-top: 10px;
+}
+.forget a {
+  font-style: italic;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: right;
+}
+.forget a:hover {
+  color: #000090;
+  text-decoration: underline;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #000090;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: rgba(0, 42, 255, 0.5);
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+.register {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.register a {
+  text-decoration: underline;
+}
+/* @media screen (max-width : 600px) {
+  .header {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .button {
+    margin: auto;
+  }
+} */
+  

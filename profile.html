@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style/profile.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Eureka Sportive</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="https://vmonreve.github.io/HomeAfterLogin/">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="https://vmonreve.github.io/KategoriOlahraga/">Article</a></li>
+          <li><a href="https://vmonreve.github.io/ChatWithTrainer/">Chat With Trainer</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container">
+      <article>
+        <!-- Section Profile -->
+        <section class="section-profile">
+          <div>
+            <h1 class="joko">Hello, Joko!</h1>
+            <div class="latar">
+              <img src="img/profilePicture-removebg-preview.jpg" alt="" class="img-pic" />
+            </div>
+            <div class="btn-profile">
+              <button class="btn">Edit Photo</button>
+              <button class="btn" onclick="logOut()">Log Out</button>
+            </div>
+          </div>
+        </section>
+        <!-- End Section Profile -->
+
+        <!-- Section Form -->
+        <section class="section-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="nama">Nama:</label>
+              <input type="text" id="nama" name="nama" value="Joko Saputro " />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" value="joko.saputro@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label for="alamat">Alamat:</label>
+              <input id="alamat" name="alamat" value="Jl. Kenangan, No. 48, Jakarta Barat" />
+            </div>
+            <div class="form-group">
+              <label for="no_hp">Nomor HP:</label>
+              <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,12}" value="+62858 - 1234 - 4567" />
+              <small>Format: 10-13 digit angka</small>
+            </div>
+            <div class="form-group">
+              <label for="tanggal_lahir">Tanggal Lahir (DD/MM/YYYY):</label>
+              <input type="text" id="tanggal_lahir" name="tanggal_lahir" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/YYYY" value="07 - 12 - 2000" />
+              <small>Format: DD/MM/YYYY</small>
+            </div>
+            <div class="form-group">
+              <button class="update" type="submit">Update Profile</button>
+            </div>
+          </form>
+        </section>
+        <!-- End Section Form -->
+      </article>
+
+      <div class="rotate">
+        <i data-feather="rotate-ccw"></i>
+        <h2>Transaction History</h2>
+      </div>
+
+      <hr class="garis" />
+      <section>
+        <table>
+          <tr>
+            <th>Date (YYYY -MM-DD)</th>
+            <th>Trainer Name</th>
+            <th>Payment Method</th>
+            <th>Payment Status</th>
+            <th>Total Payment</th>
+          </tr>
+          <tr>
+            <td>2024 - 02 - 24</td>
+            <td>Justin</td>
+            <td>Bank Central Asia</td>
+            <td>Success</td>
+            <td>Rp 25.000,00-</td>
+          </tr>
+          <tr>
+            <td>2024 - 02 - 28</td>
+            <td>Justin</td>
+            <td>Bank Central Asia</td>
+            <td>Success</td>
+            <td>Rp 25.000,00-</td>
+          </tr>
+          <tr>
+            <td>2024 - 03 - 04</td>
+            <td>Justin</td>
+            <td>Bank Central Asia</td>
+            <td>Success</td>
+            <td>Rp 25.000,00-</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <!-- JavaScript -->
+    <script>
+      function logOut() {
+        window.location.href = "https://vmonreve.github.io/HomeBeforeLogin/";
+      }
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <!-- End JavaScript -->
+  </body>
+</html>

@@ -1,0 +1,247 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: #e0e0e0;
+  height: 210vh;
+}
+
+/* Style Header */
+header {
+  background-color: #2c0b09;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 16px;
+  box-shadow: 0px -4px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 2px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 26px 0px rgba(255, 255, 255, 0.25) inset, 0px 40px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: small;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  padding: 2px;
+}
+nav ul :hover {
+  color: #ff3d00;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: small;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropbtn {
+  margin-right: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 0px 5px;
+  width: 100px;
+  background-color: #fff;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2c0b09;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 7px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background: #942720;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+/* End Style Header */
+
+.container {
+  background-color: #2c0b09;
+  margin: 50px 10px 20px 10px;
+  height: 180vh;
+}
+
+article {
+  display: flex;
+  gap: 120px;
+}
+
+/* Section Profile */
+.section-profile {
+  margin: 50px 30px 0px 70px;
+}
+
+.joko {
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+.latar {
+  background-color: #d9d9d9;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 11px;
+  margin: 0px 20px 0px 20px;
+  height: 200px;
+}
+
+.img-pic {
+  width: 120px;
+  height: 120px;
+}
+
+.btn-profile {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 0px 20px;
+  gap: 7px;
+}
+
+.btn {
+  border-radius: 11px;
+  background: #00f;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.section-form {
+  margin-top: 110px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 200%;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 11px;
+  border: none;
+}
+
+.update {
+  background-color: #0000ff;
+  color: #fff;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.rotate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.garis {
+  margin: 10px 100px 0px 100px;
+}
+
+table {
+  width: 83%;
+  margin: 50px 100px 0px 100px;
+}
+th,
+td {
+  border: 2px solid #ffffff;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+th {
+  text-align: center;
+}
+
+td {
+  padding: 16px 20px;
+  gap: 4px;
+}

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "rubik" sans-serif;
+}
+body {
+  font-family: "Rubik";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e0c0a;
+  color: #e0e0e0;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  max-width: 1200px;
+  background-image: url("../asset/image1.png");
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login {
+  width: 650px;
+  display: flex;
+  align-items: center;
+}
+section {
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 23px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 45%;
+}
+img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+section button {
+  border: none;
+  padding: 14px;
+  width: 350px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #000090;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: green;
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+.login p {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
